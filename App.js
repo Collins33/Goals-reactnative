@@ -8,9 +8,10 @@ export default function App() {
     }}>
       <View>
         <TextInput placeholder="Enter your course goal" style={{
-          borderBottomColor: 'black',
-          borderBottomWidth: 1,
-          marginBottom: 10
+          borderColor: 'black',
+          borderWidth: 1,
+          marginBottom: 10,
+          padding: 5
         }}/>
         <Button title="ADD"/>
       </View>
