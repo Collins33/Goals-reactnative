@@ -11,7 +11,7 @@ const GoalInput = ({addGoalHandler, isVisible})=>
     setEnteredGoal(enteredText)
  }
   return (
-    <Modal visible={isVisible}>
+    <Modal visible={isVisible} animationType="slide">
     <View style={bodyContainer}>
         <TextInput 
         placeholder="Enter your course goal" 
@@ -29,8 +29,9 @@ const GoalInput = ({addGoalHandler, isVisible})=>
 
 const styles = StyleSheet.create({
   bodyContainer:{
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'center',
     alignItems: 'center'
   },
   inputContainer:{

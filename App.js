@@ -11,6 +11,7 @@ export default function App() {
   // add the goal to the array of goals
   const addGoalHandler=(goalTitle)=>{
     setCourseGoals(currentGoals => [...currentGoals, {key: Math.random().toString(), value: goalTitle}])
+    setVisibility(false);
   }
 
   // delete a goal from the list
