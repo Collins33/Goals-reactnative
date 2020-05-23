@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 
 export default function App() {
   const [enteredGoal, setEnteredGoal] = useState('');
-
+  const [courseGoals, setCourseGoals] = useState([]);
   // add the goal the state
   const goalInputHandler = (enteredText)=>{
      setEnteredGoal(enteredText)
@@ -12,7 +12,7 @@ export default function App() {
 
   // add the goal to the array of goals
   const addGoalHandler=()=>{
-    console.log(enteredGoal)
+    setCourseGoals(currentGoals => [...currentGoals, enteredGoal])
   }
 
   const {mainScreen, bodyContainer, inputContainer} = styles;
